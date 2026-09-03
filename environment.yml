@@ -1,0 +1,48 @@
+# Conda environment aligned with Dockerfile (CUDA 12.4, PyTorch 2.4).
+# Create: conda env create -f environment.yml
+# Update: conda env update -f environment.yml --prune
+#
+# Requires an NVIDIA driver compatible with CUDA 12.4.
+# For SIBR_viewers / COLMAP tooling, install system deps separately (see Dockerfile apt packages).
+
+name: 3dgs_truncated_grad
+
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip>=24.0
+
+  # # PyTorch stack (Docker: torch==2.4.0, torchvision==0.19.0, cu124)
+  # - pytorch=2.4.0
+  # - torchvision=0.19.0
+  # - pytorch-cuda=12.4
+
+  # CUDA toolkit for building rasterization / knn extensions
+  # - cuda-toolkit=12.4
+  - cmake
+  - ninja
+
+  # Python deps installed via conda where available
+  - plyfile
+  - tqdm
+  - matplotlib
+  - ffmpeg
+
+  - pip:
+    - setuptools
+    - cython
+    - wheel
+    - opencv-python
+    - joblib
+    - wandb
+    - tensorboard
+    # Local extensions (Docker: pip install ./submodules/...)
+    # - submodules/diff-gaussian-rasterization
+    # - submodules/fused-ssim
+    # - submodules/simple-knn
+    # - submodules/diff-gaussian-rasterization-trunc
