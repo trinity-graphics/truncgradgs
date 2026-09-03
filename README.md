@@ -1,8 +1,6 @@
-# 3D Gaussian Splatting for Real-Time Radiance Field Rendering
+# TruncGradGS: Improved 3D Gaussian Splatting via Truncated Gradient Updates
 
-This work is based on the original work of 
-Bernhard Kerbl*, Georgios Kopanas*, Thomas Leimkühler, George Drettakis (* indicates equal contribution)<br>
-| [Webpage](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/) | [Full Paper](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/3d_gaussian_splatting_high.pdf) | [Video](https://youtu.be/T_kXY43VZnk) | [Other GRAPHDECO Publications](http://www-sop.inria.fr/reves/publis/gdindex.php) | [FUNGRAPH project page](https://fungraph.inria.fr) |<br>
+**Pacific Graphics 2026** — *The 34th Pacific Conference on Computer Graphics and Applications*
 
 ## Cloning the Repository
 
