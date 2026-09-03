@@ -7,12 +7,12 @@
 The repository contains submodules, thus please check it out with 
 ```shell
 # SSH
-git clone git@github.com:DubiousCactus/gaussian-splatting-truncated-grad.git --recursive --depth=1
+git clone git@github.com:trinity-graphics/truncgradgs.git --recursive --depth=1
 ```
 or
 ```shell
 # HTTPS
-git clone https://github.com/DubiousCactus/gaussian-splatting-truncated-grad --recursive --depth=1
+git clone https://github.com/trinity-graphics/truncgradgs.git --recursive --depth=1
 ```
 
 ## Setup
