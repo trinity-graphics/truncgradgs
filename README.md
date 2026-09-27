@@ -72,13 +72,20 @@ To make things easier, you can run it standalone (no virtual environment require
 uv run scripts/export_motion_masks.py --help
 ```
 
-Work in progress.
+## Citation
 
+If you use this work, please cite:
 
-### Evaluation
-I need to write some evaluation script, because we can conveniently reuse wandb's logs
-to evaluate the model, since it already contains PSNR/SSIM values of the test set.
-However, I should write a script which renders the test views and computes more metrics.
-For now, I have some scripts which pull from wandb, average, and plot:
-`log_wandb_metrics_to_json.py` and `plot_exp.py`.
+```bibtex
+@inproceedings{morales2026truncgradgs,
+  title        = {TruncGradGS: Improved 3D Gaussian Splatting via Truncated Gradient Updates},
+  author       = {Morales, Th{\'e}o and Le-Pham, Nhat-Quynh and Atkins, Robin and Hua, Binh-Son},
+  booktitle    = {Proceedings of Pacific Graphics 2026},
+  year         = {2026},
+  publisher    = {The Eurographics Association},
+  eprint       = {2609.03534},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV}
+}
+```
 
